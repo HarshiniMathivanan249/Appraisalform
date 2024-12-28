@@ -6,119 +6,74 @@
     <title>Reporting Manager Assessment</title>
     <style>
        /* General Reset */
-       * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #C8F2D0, #90D8A3);
-            color: #000000;
-            flex-direction: column; 
-            text-align: center;
-        }
-/*
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #C8F2D0, #90D8A3);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    flex-direction: column; 
+    text-align: center;
+}
+
 h1 {
     margin-bottom: 20px;
     color: #2E8B40;
     font-size: 2rem;
 }
-*/
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center-align items */
-    margin: 20px auto;
-    width: 100%;
-    max-width: 400px; /* Reduced container width */
-    padding: 0 10px; /* Reduced padding for a tighter fit */
-    box-sizing: border-box;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
     gap: 20px;
 }
 
+/* Columns styling */
 .column {
-    background: #2E8B40;
+    background: #2E8B40; /* Dark green */
     border-radius: 15px;
+    overflow: hidden;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    flex: 1 1 calc(100% - 40px); /* Take full width on small screens */
-    box-sizing: border-box;
-    max-width: 100%;
-    text-align: center; /* Center-align buttons */
+    flex: 1;
 }
 
-.column a.button {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #2E8B40;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px 0;
-    transition: background 0.3s ease;
-}
-
-.column a.button:hover {
-    background-color: #256a2e;
-}
-
-
-
+/* Buttons styling */
 a.button {
-            padding: 15px;
-            text-align: center;
-            color: #FFFFFF;
-            font-weight: bold;
-            font-size: 16px;
-            text-decoration: none;
-            display: block;
-            border-bottom: 1px solid #256A2E;
-            transition: all 0.3s ease-in-out;
-            letter-spacing: 1px;
-        }
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #256A2E;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
 
-        a.button:last-child {
-            border-bottom: none;
-        }
+a.button:last-child {
+    border-bottom: none;
+}
 
-        a.button:hover {
-            background: #256A2E;
-            color: #FFD700;
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Responsive styles for mobile view */
-        @media (max-width: 768px) {
-            a.button {
-                padding: 12px; /* Slightly smaller padding for mobile */
-                font-size: 14px; /* Smaller font size for better fit */
-                letter-spacing: 0.5px; /* Reduced letter-spacing */
-            }
-
-            a.button:hover {
-                transform: scale(1.03); /* Less scaling for touch devices */
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Softer shadow */
-            }
-        }
-
-     
+a.button:hover {
+    background: #256A2E;
+    color: #FFD700;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* Popup Styling */
 #popupContainer {
@@ -276,8 +231,6 @@ a.button {
         padding: 6px 12px;
     }
 }
-
-
 .buttons {
             position: fixed;
             bottom: 20px;
@@ -307,25 +260,22 @@ a.button {
             background-color: #2e7d32;
             color: #fff;
         }
-        
 
     </style>
 </head>
 <body>
 
     <img src="images.png" alt="Giri Logo" style="width: 150px; margin-bottom: 20px;">
-
+    <h2 style="color: black;">Reporting Manager Assessment(TL,Managers,Incharges,Supervisors)</h2>
     <div class="container">
-        
-      
         <div class="column">
-            <h2 style="color: black;">Reporting Manager Assessment</h2>
-          
-            <h2 class="responsive-text">(TL, Managers, Incharges, Supervisors)</h2>
-
-           
+            <a href="performance_appraisal.html" class="button">PERFORMANCE APPRAISAL</a>
+            <a href="warehouse_appraisal.html" class="button">WAREHOUSE APPRAISAL</a>
+            <a href="retail_shop_employees_assessment.html" class="button">RETAIL SHOP EMPLOYEES ASSESSMENT</a>
+        </div>
+        <div class="column">
             <a href="self_skill_assessment.html" class="button">SELF-SKILL ASSESSMENT</a>
-            <a href="behaviour_self_assessment.html" class="button">SELF-BEHAVIOUR ASSESSMENT</a>
+            <a href="behaviour_self_assessment.html" class="button">BEHAVIOUR SELF ASSESSMENT</a>
             <a href="reporting_manager_assessment.html" class="button">REPORTING MANAGER ASSESSMENT</a>
         </div>
     </div>
@@ -340,7 +290,7 @@ a.button {
 
             <form id="appraisalForm" style="display: none;">
                 <h2>Appraisal Form</h2>
-                <input type="text" id="employeeName  " placeholder="Employee Name" readonly />
+                <input type="text" id="employeeName" placeholder="Employee Name" readonly />
                 <input type="text" id="employeeCodeDisplay" placeholder="Employee Code" readonly />
                 <input type="text" id="managerName" placeholder="Employee Name" required />
                 <input type="text" id="managerCode" placeholder="Employee Code" required />
@@ -555,6 +505,7 @@ a.button {
     }
 </script>
 
+
 <script>
     // Form validation function
    function validateForm() {
@@ -651,6 +602,7 @@ a.button {
    });
    
    </script>
+
 
 
     <script>
